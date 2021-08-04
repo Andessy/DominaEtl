@@ -535,7 +535,7 @@
     <hop>
       <from>Select values 3</from>
       <to>REDSHIFT - OUTPUT</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
   </order>
   <step>
@@ -1198,63 +1198,48 @@ if (minutos &lt;= 10 ){
     <fields>
       <field>
         <name>id_call</name>
-        <rename/>
       </field>
       <field>
         <name>type_call</name>
-        <rename/>
       </field>
       <field>
         <name>date</name>
-        <rename/>
       </field>
       <field>
         <name>id_agent</name>
-        <rename/>
       </field>
       <field>
         <name>name_agent</name>
-        <rename/>
       </field>
       <field>
         <name>skill</name>
-        <rename/>
       </field>
       <field>
         <name>wait_time</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_10</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_20</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_30</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_40</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_50</name>
-        <rename/>
       </field>
       <field>
         <name>skill_result</name>
-        <rename/>
       </field>
       <field>
         <name>ani</name>
-        <rename/>
       </field>
       <field>
         <name>dnis</name>
-        <rename/>
       </field>
       <field>
         <name>date</name>
@@ -1442,91 +1427,69 @@ if (minutos &lt;= 10 ){
     <fields>
       <field>
         <name>id_call</name>
-        <rename/>
       </field>
       <field>
         <name>type</name>
-        <rename/>
       </field>
       <field>
         <name>fecha</name>
-        <rename/>
       </field>
       <field>
         <name>horamilitar</name>
-        <rename/>
       </field>
       <field>
         <name>minutos</name>
-        <rename/>
       </field>
       <field>
         <name>extagent</name>
-        <rename/>
       </field>
       <field>
         <name>name_agent</name>
-        <rename/>
       </field>
       <field>
         <name>skill</name>
-        <rename/>
       </field>
       <field>
         <name>wait_time</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_10</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_20</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_30</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_40</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_50</name>
-        <rename/>
       </field>
       <field>
         <name>skill_result</name>
-        <rename/>
       </field>
       <field>
         <name>ani</name>
-        <rename/>
       </field>
       <field>
         <name>dnis</name>
-        <rename/>
       </field>
       <field>
         <name>metans</name>
-        <rename/>
       </field>
       <field>
         <name>div</name>
-        <rename/>
       </field>
       <field>
         <name>redondeo</name>
-        <rename/>
       </field>
       <field>
         <name>date_in</name>
-        <rename/>
       </field>
       <field>
         <name>hora_in</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -1591,107 +1554,81 @@ if (minutos &lt;= 10 ){
     <fields>
       <field>
         <name>id_call</name>
-        <rename/>
       </field>
       <field>
         <name>type</name>
-        <rename/>
       </field>
       <field>
         <name>fecha</name>
-        <rename/>
       </field>
       <field>
         <name>horamilitar</name>
-        <rename/>
       </field>
       <field>
         <name>minutos</name>
-        <rename/>
       </field>
       <field>
         <name>extagent</name>
-        <rename/>
       </field>
       <field>
         <name>name_agent</name>
-        <rename/>
       </field>
       <field>
         <name>skill</name>
-        <rename/>
       </field>
       <field>
         <name>wait_time</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_10</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_20</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_30</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_40</name>
-        <rename/>
       </field>
       <field>
         <name>calls_ans_50</name>
-        <rename/>
       </field>
       <field>
         <name>skill_result</name>
-        <rename/>
       </field>
       <field>
         <name>ani</name>
-        <rename/>
       </field>
       <field>
         <name>dnis</name>
-        <rename/>
       </field>
       <field>
         <name>metans</name>
-        <rename/>
       </field>
       <field>
         <name>abandonadas</name>
-        <rename/>
       </field>
       <field>
         <name>answer</name>
-        <rename/>
       </field>
       <field>
         <name>horaintervalo</name>
-        <rename/>
       </field>
       <field>
         <name>inboundtotal</name>
-        <rename/>
       </field>
       <field>
         <name>date_in</name>
-        <rename/>
       </field>
       <field>
         <name>hora_in</name>
-        <rename/>
       </field>
       <field>
         <name>dia</name>
-        <rename/>
       </field>
       <field>
         <name>mes</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>

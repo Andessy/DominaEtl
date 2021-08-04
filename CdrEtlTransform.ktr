@@ -431,7 +431,7 @@
     <created_date>2021/08/03 14:55:09.293</created_date>
     <modified_user>-</modified_user>
     <modified_date>2021/08/03 14:55:09.293</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -520,9 +520,297 @@
     <hop>
       <from>Group by</from>
       <to>Table output</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
   </order>
+  <step>
+    <name>Group by</name>
+    <type>GroupBy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore/>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname/>
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>id_call</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>type_call</aggregate>
+        <subject>type_call</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>talk_time</aggregate>
+        <subject>talk_time</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>id_agent</aggregate>
+        <subject>id_agent</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>agent_name</aggregate>
+        <subject>agent_name</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>agent_identification</aggregate>
+        <subject>agent_identification</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>skill</aggregate>
+        <subject>skill</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>date</aggregate>
+        <subject>date</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>hour</aggregate>
+        <subject>hour</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>day_of_week</aggregate>
+        <subject>day_of_week</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>typing_code</aggregate>
+        <subject>typing_code</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>descri_typing_code</aggregate>
+        <subject>descri_typing_code</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>typing_code2</aggregate>
+        <subject>typing_code2</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>descri_typing_code2</aggregate>
+        <subject>descri_typing_code2</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>hit</aggregate>
+        <subject>hit</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>telephone_destination</aggregate>
+        <subject>telephone_destination</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>telephone_costs</aggregate>
+        <subject>telephone_costs</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>telephone_number</aggregate>
+        <subject>telephone_number</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>who_hangs_up</aggregate>
+        <subject>who_hangs_up</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>customer_identification</aggregate>
+        <subject>customer_identification</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>month</aggregate>
+        <subject>month</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>screen_recording</aggregate>
+        <subject>screen_recording</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>operation</aggregate>
+        <subject>operation</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>ring</aggregate>
+        <subject>ring</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>abandon</aggregate>
+        <subject>abandon</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>cdt_tdc</aggregate>
+        <subject>cdt_tdc</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>descripcion_definitiva</aggregate>
+        <subject>descripcion_definitiva</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>descri_typing_codeReplace</aggregate>
+        <subject>descri_typing_codeReplace</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield/>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+
+var cdt_tdc =0;
+var descripcion_definitiva = "";
+var descri_typing_codeReplace;
+
+if(descri_typing_code2 != null){
+
+if(descri_typing_code2.indexOf('CDT') != -1 || descri_typing_code2.indexOf("AMPLIACION PLAZO") != -1|| descri_typing_code2.indexOf('TDC') != -1) {
+  cdt_tdc = 1;
+  
+}else{
+  cdt_tdc = 0;
+}
+
+if(descri_typing_code2.indexOf('CLAVE') != -1 &amp;&amp; descri_typing_code2.indexOf('remite a') != -1){
+descripcion_definitiva = "OTRAS SOLICITUDES SE REMITE A SAC"
+}else{
+descripcion_definitiva = descri_typing_code2.toUpperCase();
+
+}
+}
+
+if(descri_typing_code != null){
+
+
+descri_typing_codeReplace = descri_typing_code.replace(/_/g, ' ');
+
+}</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>cdt_tdc</name>
+        <rename>cdt_tdc</rename>
+        <type>Integer</type>
+        <length>16</length>
+        <precision>1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>descripcion_definitiva</name>
+        <rename>descripcion_definitiva</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>descri_typing_codeReplace</name>
+        <rename>descri_typing_codeReplace</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>360</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step>
     <name>S3 CSV Input</name>
     <type>S3CSVINPUT</type>
@@ -849,103 +1137,78 @@
     <fields>
       <field>
         <name>id_call</name>
-        <rename/>
       </field>
       <field>
         <name>type_call</name>
-        <rename/>
       </field>
       <field>
         <name>talk_time</name>
-        <rename/>
       </field>
       <field>
         <name>id_agent</name>
-        <rename/>
       </field>
       <field>
         <name>agent_name</name>
-        <rename/>
       </field>
       <field>
         <name>agent_identification</name>
-        <rename/>
       </field>
       <field>
         <name>skill</name>
-        <rename/>
       </field>
       <field>
         <name>date</name>
-        <rename/>
       </field>
       <field>
         <name>hour</name>
-        <rename/>
       </field>
       <field>
         <name>day_of_week</name>
-        <rename/>
       </field>
       <field>
         <name>typing_code</name>
-        <rename/>
       </field>
       <field>
         <name>descri_typing_code</name>
-        <rename/>
       </field>
       <field>
         <name>typing_code2</name>
-        <rename/>
       </field>
       <field>
         <name>descri_typing_code2</name>
-        <rename/>
       </field>
       <field>
         <name>hit</name>
-        <rename/>
       </field>
       <field>
         <name>telephone_destination</name>
-        <rename/>
       </field>
       <field>
         <name>telephone_costs</name>
-        <rename/>
       </field>
       <field>
         <name>telephone_number</name>
-        <rename/>
       </field>
       <field>
         <name>who_hangs_up</name>
-        <rename/>
       </field>
       <field>
         <name>customer_identification</name>
-        <rename/>
       </field>
       <field>
         <name>month</name>
-        <rename/>
       </field>
       <field>
         <name>screen_recording</name>
-        <rename/>
       </field>
       <field>
         <name>operation</name>
-        <rename/>
       </field>
       <field>
         <name>ring</name>
-        <rename/>
       </field>
       <field>
         <name>abandon</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -963,8 +1226,8 @@
     </GUI>
   </step>
   <step>
-    <name>Modified Java Script Value</name>
-    <type>ScriptValueMod</type>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -973,67 +1236,132 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>
-      <jsScript>
-        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>//Script here
-
-var cdt_tdc =0;
-var descripcion_definitiva = "";
-var descri_typing_codeReplace;
-
-if(descri_typing_code2 != null){
-
-if(descri_typing_code2.indexOf('CDT') != -1 || descri_typing_code2.indexOf("AMPLIACION PLAZO") != -1|| descri_typing_code2.indexOf('TDC') != -1) {
-  cdt_tdc = 1;
-  
-}else{
-  cdt_tdc = 0;
-}
-
-if(descri_typing_code2.indexOf('CLAVE') != -1 &amp;&amp; descri_typing_code2.indexOf('remite a') != -1){
-descripcion_definitiva = "OTRAS SOLICITUDES SE REMITE A SAC"
-}else{
-descripcion_definitiva = descri_typing_code2.toUpperCase();
-
-}
-}
-
-if(descri_typing_code != null){
-
-
-descri_typing_codeReplace = descri_typing_code.replace(/_/g, ' ');
-
-}</jsScript_script>
-      </jsScript>
-    </jsScripts>
     <fields>
       <field>
+        <name>id_call</name>
+      </field>
+      <field>
+        <name>type_call</name>
+      </field>
+      <field>
+        <name>talk_time</name>
+      </field>
+      <field>
+        <name>id_agent</name>
+      </field>
+      <field>
+        <name>agent_name</name>
+      </field>
+      <field>
+        <name>agent_identification</name>
+      </field>
+      <field>
+        <name>skill</name>
+      </field>
+      <field>
+        <name>date</name>
+      </field>
+      <field>
+        <name>hour</name>
+      </field>
+      <field>
+        <name>day_of_week</name>
+      </field>
+      <field>
+        <name>typing_code</name>
+      </field>
+      <field>
+        <name>descri_typing_code</name>
+      </field>
+      <field>
+        <name>typing_code2</name>
+      </field>
+      <field>
+        <name>descri_typing_code2</name>
+      </field>
+      <field>
+        <name>hit</name>
+      </field>
+      <field>
+        <name>telephone_destination</name>
+      </field>
+      <field>
+        <name>telephone_costs</name>
+      </field>
+      <field>
+        <name>telephone_number</name>
+      </field>
+      <field>
+        <name>who_hangs_up</name>
+      </field>
+      <field>
+        <name>customer_identification</name>
+      </field>
+      <field>
+        <name>month</name>
+      </field>
+      <field>
+        <name>screen_recording</name>
+      </field>
+      <field>
+        <name>operation</name>
+      </field>
+      <field>
+        <name>ring</name>
+      </field>
+      <field>
+        <name>abandon</name>
+      </field>
+      <field>
         <name>cdt_tdc</name>
-        <rename>cdt_tdc</rename>
-        <type>Integer</type>
-        <length>16</length>
-        <precision>1</precision>
-        <replace>N</replace>
       </field>
       <field>
         <name>descripcion_definitiva</name>
-        <rename>descripcion_definitiva</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
       </field>
       <field>
         <name>descri_typing_codeReplace</name>
-        <rename>descri_typing_codeReplace</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>id_call</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
     </fields>
     <cluster_schema/>
@@ -1044,7 +1372,7 @@ descri_typing_codeReplace = descri_typing_code.replace(/_/g, ' ');
       </output>
     </remotesteps>
     <GUI>
-      <xloc>360</xloc>
+      <xloc>672</xloc>
       <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1196,387 +1524,6 @@ descri_typing_codeReplace = descri_typing_code.replace(/_/g, ' ');
     </remotesteps>
     <GUI>
       <xloc>880</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values 2</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>id_call</name>
-        <rename/>
-      </field>
-      <field>
-        <name>type_call</name>
-        <rename/>
-      </field>
-      <field>
-        <name>talk_time</name>
-        <rename/>
-      </field>
-      <field>
-        <name>id_agent</name>
-        <rename/>
-      </field>
-      <field>
-        <name>agent_name</name>
-        <rename/>
-      </field>
-      <field>
-        <name>agent_identification</name>
-        <rename/>
-      </field>
-      <field>
-        <name>skill</name>
-        <rename/>
-      </field>
-      <field>
-        <name>date</name>
-        <rename/>
-      </field>
-      <field>
-        <name>hour</name>
-        <rename/>
-      </field>
-      <field>
-        <name>day_of_week</name>
-        <rename/>
-      </field>
-      <field>
-        <name>typing_code</name>
-        <rename/>
-      </field>
-      <field>
-        <name>descri_typing_code</name>
-        <rename/>
-      </field>
-      <field>
-        <name>typing_code2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>descri_typing_code2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>hit</name>
-        <rename/>
-      </field>
-      <field>
-        <name>telephone_destination</name>
-        <rename/>
-      </field>
-      <field>
-        <name>telephone_costs</name>
-        <rename/>
-      </field>
-      <field>
-        <name>telephone_number</name>
-        <rename/>
-      </field>
-      <field>
-        <name>who_hangs_up</name>
-        <rename/>
-      </field>
-      <field>
-        <name>customer_identification</name>
-        <rename/>
-      </field>
-      <field>
-        <name>month</name>
-        <rename/>
-      </field>
-      <field>
-        <name>screen_recording</name>
-        <rename/>
-      </field>
-      <field>
-        <name>operation</name>
-        <rename/>
-      </field>
-      <field>
-        <name>ring</name>
-        <rename/>
-      </field>
-      <field>
-        <name>abandon</name>
-        <rename/>
-      </field>
-      <field>
-        <name>cdt_tdc</name>
-        <rename/>
-      </field>
-      <field>
-        <name>descripcion_definitiva</name>
-        <rename/>
-      </field>
-      <field>
-        <name>descri_typing_codeReplace</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>544</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>id_call</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>672</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Group by</name>
-    <type>GroupBy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <all_rows>N</all_rows>
-    <ignore_aggregate>N</ignore_aggregate>
-    <field_ignore/>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>grp</prefix>
-    <add_linenr>N</add_linenr>
-    <linenr_fieldname/>
-    <give_back_row>N</give_back_row>
-    <group>
-      <field>
-        <name>id_call</name>
-      </field>
-    </group>
-    <fields>
-      <field>
-        <aggregate>type_call</aggregate>
-        <subject>type_call</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>talk_time</aggregate>
-        <subject>talk_time</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>id_agent</aggregate>
-        <subject>id_agent</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>agent_name</aggregate>
-        <subject>agent_name</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>agent_identification</aggregate>
-        <subject>agent_identification</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>skill</aggregate>
-        <subject>skill</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>date</aggregate>
-        <subject>date</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>hour</aggregate>
-        <subject>hour</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>day_of_week</aggregate>
-        <subject>day_of_week</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>typing_code</aggregate>
-        <subject>typing_code</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>descri_typing_code</aggregate>
-        <subject>descri_typing_code</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>typing_code2</aggregate>
-        <subject>typing_code2</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>descri_typing_code2</aggregate>
-        <subject>descri_typing_code2</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>hit</aggregate>
-        <subject>hit</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>telephone_destination</aggregate>
-        <subject>telephone_destination</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>telephone_costs</aggregate>
-        <subject>telephone_costs</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>telephone_number</aggregate>
-        <subject>telephone_number</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>who_hangs_up</aggregate>
-        <subject>who_hangs_up</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>customer_identification</aggregate>
-        <subject>customer_identification</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>month</aggregate>
-        <subject>month</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>screen_recording</aggregate>
-        <subject>screen_recording</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>operation</aggregate>
-        <subject>operation</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>ring</aggregate>
-        <subject>ring</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>abandon</aggregate>
-        <subject>abandon</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>cdt_tdc</aggregate>
-        <subject>cdt_tdc</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>descripcion_definitiva</aggregate>
-        <subject>descripcion_definitiva</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-      <field>
-        <aggregate>descri_typing_codeReplace</aggregate>
-        <subject>descri_typing_codeReplace</subject>
-        <type>LAST_INCL_NULL</type>
-        <valuefield/>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>768</xloc>
       <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
